@@ -19,7 +19,7 @@ public class CubeMovementForward1 : MonoBehaviour
         bool boolPhy = Physics.Raycast(ray, out hiting);
         if (Input.GetMouseButtonDown(0))
         {
-            hiting.collider.gameObject.GetComponent<Renderer>().material.color = 
+           // hiting.collider.gameObject.GetComponent<Renderer>().material.color = 
             g.transform.localRotation = hiting.transform.localRotation;
             myspeedScript = 1.03f;
             if (myspeedScript > 1)
